@@ -1,4 +1,4 @@
-# Credientials Chef Cookbook
+# Credentials Chef Cookbook
 
 ## Description
 
