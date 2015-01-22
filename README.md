@@ -22,6 +22,24 @@ Now include the credentials cookbook at the start of your run\_list 'recipe[cred
 
 node['psql_password']
 
+## Installation using Librarian-Chef
+
+[Librarian-Chef](https://github.com/applicationsonline/librarian#readme) is a bundler for your chef cookbooks. To install Librarian-Chef:
+
+	cd chef-repo
+	gem install librarian
+	librarian-chef init
+
+To use credentials:
+
+	echo "cookbook 'credentials', git: 'git://github.com/cfreeman/chef-credentials.git'" >> Cheffile
+
+## Recipes
+
+### default
+
+This recipe decripts the 'credentials' data bag and stores the contents direction within the node attributes.
+
 ## License
 
 Copyright 2015, Clinton Freeman
